@@ -1,0 +1,257 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 12px;
+	position: relative;
+	font-family: sans-serif;
+}
+html, body{
+	width: 100%;
+}
+header{
+	width: 100%;
+	border-bottom: solid 1px #e5e5e5;
+	/*background: gray;*/
+}
+#header{
+	width: 1096px;
+	height: 50px;
+	/*background: red;*/
+	margin: auto;
+}
+#logo{
+	width: 150px;
+	height: 50px;
+	float: left;
+	border-right: solid 1px #E9E5E5;
+}
+#logo img{
+	width: 100%;;
+	height: 30px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+#header h4{
+	width: 300px;
+	height: 30px;
+	/*background: #C7A4A4;*/
+	font-weight: none;
+	padding-left: 20px;
+	line-height: 30px;
+	color: #757575;
+	float: left;
+	margin-left: 5px;
+	border-left: solid 1px #e5e5e5;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+header i{
+	width: 15px;
+}
+header a{
+	color: black;
+	text-decoration: none;
+}
+header a:hover{
+	color: #4A4AF5;
+}
+header i{
+	color: #BDBABA;
+}
+#newest, #inter, #login{
+	float: left;
+	padding: 5px 10px;
+	border: solid 1px #e5e5e5;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: 5px;
+}
+#inter:hover{
+	background: #DCD8D8;
+}
+#newest:hover{
+	background: #DCD8D8;
+}
+input[type=search]{
+	border: none;
+	
+	color: #BDBABA;
+	margin-right: 5px;
+}
+input[type=search]:focus{
+	color: black;
+	outline: none;
+}
+#header form{
+	padding: 5px 10px;
+	border: solid 1px #e5e5e5;
+	border-radius: 10px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+/*---------------------------------*/
+nav{
+	width: 100%;
+	height: 40px;
+	/*background: #5F0E06;*/
+	border-bottom: solid 1px #e5e5e5;
+}
+nav #menu{
+	width: 1096px;
+	/*height: 40px;*/
+	background: #FB4330;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#menu > ul{
+	list-style: none;
+	width: 100%;
+}
+#menu > ul > li{
+	float: left;
+	position: relative;
+}
+#menu > ul > li > a{
+	width: 100px;
+	text-align: left;
+	color: #4f4f4f;
+	text-decoration: none;
+	/*padding: 10px 0;*/
+	/*background: #F7F54F;*/
+	float: left;
+	line-height: 40px;
+	font-weight: bold;
+/*	border: solid 1px black;*/
+}
+#menu i{
+	padding: 3px;
+	background: #B59E9E;
+	border-radius: 50%;
+}
+#menu i:hover{
+	background: #AE3535;
+	color: white;
+}
+#menu #home i{
+	top: 50%;
+	left: 50%;
+/*	transform: translate(-50%, -50%);*/
+}
+/*----------Sub menu----------*/
+ul.sub{
+	list-style: none;
+	position: absolute;
+	left: 0;
+	top: 60px;
+	border-top: 1px solid #AE3535;
+	box-shadow: 0px 0px 5px #D1C8C8;
+	visibility: hidden;
+	opacity: 0;
+	/*display: none;	*/
+	transition: 0.2s;
+}
+#menu li:hover > ul{
+	/*display: block;*/
+	visibility: visible;
+	opacity: 1;
+	top: 40px;	
+}
+.sub a{
+	width: 150px;
+	padding: 10px 0;
+	text-indent: 10px;
+	color: black;
+	text-decoration: none;
+	display: block;
+	background: #FFF;
+}
+.sub a:hover{
+	text-decoration: underline;
+}
+
+/*-----------------------------------*/
+section {
+	width: 100%;
+	/*background: #0F3B21;*/
+	z-index: -1;
+}
+section #content{
+	width: 1096px;
+	min-height: 1000px;
+	/*background: #5CFE60;*/
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 10px 0;
+}
+#content #image{
+	width: 790px;
+	background: #ECDDDD;
+	float: left;
+}
+#image h2{
+	font-size: 20px;
+	float: left;
+	width: 220px;
+	margin: 20px;
+	color: black;
+	/*top: 20px;*/
+}
+#image h2:hover{
+	color: #4642F6;
+}
+#image img{
+	width: 520px;
+	float: left;
+}
+#image p{
+	width: 220px;
+	margin-left: 20px;
+	/*background: #CE5A5A;*/
+	float: left;
+}
+.news{
+	width: 250px;
+	min-height: 100px;
+	float: left;
+	/*background: #06AC64;*/
+	margin-right: 20px;
+	margin-top: 20px;
+	padding-right: 20px;
+}
+div.news:nth-child(3){
+	border-right: solid 1px #e5e5e5;
+}
+.news a{
+	text-decoration: none;
+	/*color: black;*/
+}
+.news h3{
+	font-size: 15px; 
+	text-align: justify;
+	margin-bottom: 10px;
+	color: black;
+}
+.news h3:hover{
+	color: #4642F6;
+}
+.news p{
+	line-height: 1.6;
+	text-align: justify;
+}
+.news p:nth-child(3){
+	font-style: italic;
+	color: #B9ADAD;
+	display: inline-block;
+	margin-top: 20px;
+}
+.news img{
+	width: 60px;
+	float: right;
+	display: inline;
+	background: #D1C3C3;
+	border-radius: 50%;
+}
